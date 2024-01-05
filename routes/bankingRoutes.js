@@ -35,7 +35,7 @@ router.patch("/users/:from/transact/:to", transactMoney);
 router.delete("/users/:id", deleteUser);
 
 // Route to filter the users by amount of cash
-router.get("/users/filter/cash/:amount", filterByAmountOfCash)
+router.get("/users/filter/cash/:amount", filterByAmountOfCash);
 
 // EXTRA: Route to update account status "active" || "inActive
 router.patch("/users/:id/active", updateUserStatus);
