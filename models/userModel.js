@@ -23,7 +23,7 @@ const userSchema = new mongoose.Schema({
 
   credit: {
     type: Number,
-    default: true,
+    default: 0,
   },
 
   isActive: {

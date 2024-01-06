@@ -4,7 +4,7 @@ Welcome to the Banking System API! This API provides a set of endpoints to inter
 
 ## API Base URL
 
-[https://banking-system-api-mt6q.onrender.com/api/v1/banking](https://banking-system-api-mt6q.onrender.com/api/v1/banking)
+[https://bankapibd.onrender.com/api/v1/banking](https://bankapibd.onrender.com/api/v1/banking)
 
 ## API Endpoints
 
@@ -65,11 +65,12 @@ Welcome to the Banking System API! This API provides a set of endpoints to inter
    - Description: Delete a user (if inactive).
 
 8. **Update User Account Status:**
+
    - Endpoint: `/users/:id/active`
    - Method: PATCH
    - Description: Update user account status (active/inactive).
 
 9. **Filter Users by Amount of Cash:**
-    - Endpoint: `/users/filter/cash/:amount`
-    - Method: GET
-    - Description: Filter users by the specified amount of cash.
+   - Endpoint: `/users/filter/cash/:amount`
+   - Method: GET
+   - Description: Filter users by the specified amount of cash.
