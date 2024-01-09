@@ -26,6 +26,7 @@ export const deleteUser = async (req, res, next) => {
       res.status(STATUS_CODE.NOT_FOUND);
       throw new Error("Delete Failed");
     }
+    console.log(deleteUser);
     res.status(STATUS_CODE.OK).send("User have Been deleted");
   } catch (error) {
     next(error);
@@ -56,7 +57,7 @@ export const depositMoney = async (req, res, next) => {
       { new: true }
     );
 
-    res.status(STATUS_CODE.OK).send(`Amount of $${cash} have been deposited`);
+    res.status(STATUS_CODE.OK).send(`Amount of ${cash} have been deposited`);
   } catch (error) {
     next(error);
   }
@@ -100,7 +101,7 @@ export const filterByAmountOfCash = async (req, res, next) => {
       cashQuery = { cash: { $lte: amount } };
     }
     const users = await User.find(cashQuery);
-    res.send(users);
+    res.status(STATUS_CODE.OK).send(users);
   } catch (error) {
     next(error);
   }
